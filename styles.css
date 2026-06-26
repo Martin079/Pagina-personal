@@ -316,4 +316,46 @@ footer {
             color: var(--text-main);
             text-decoration: underline; /* El subrayado solo aparece al pasar el cursor */
         }
+
+        /* ================================================================= */
+/* DISEÑO RESPONSIVO PARA PROYECTOS Y DETALLES (MÓVILES)             */
+/* ================================================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Ajuste para la cuadrícula de Proyectos Personales (pasa de 2 a 1 columna) */
+    .projects-personal-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    /* 2. Ajuste para la cuadrícula de 5 Proyectos Escolares */
+    /* El 'auto-fit' ya hace magia, pero reducimos el tamaño mínimo para que no se desborde en pantallas muy chicas */
+    .academic-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    /* 3. Ajuste para la página individual de cada proyecto */
+    .project-header-section h1 {
+        font-size: 1.8rem; /* Achicamos un poco el título en el celular */
+        text-align: center;
+    }
+    
+    .project-subtitle {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* 4. Galería de imágenes individual (pasa a verse una imagen debajo de la otra) */
+    .project-gallery {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    /* 5. Cajas de subproyectos (Apuntes, etc.) */
+    .sub-project-box {
+        padding: 12px 15px; /* Un poco menos de espacio interno en móviles */
+    }
+}
 }
