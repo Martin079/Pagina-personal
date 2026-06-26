@@ -3,92 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV personal Sambon Martin</title>
+    <title>Sobre Mí</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header class="header-cv">
-        <div class="foto-contenedor">
-            <img src="foto.jpg" alt="Foto de Perfil" class="foto-perfil">
-        </div>
-        <h1 class="nombre-principal">Martin Sambon</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Sobre Mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li> </ul>
+        </nav>
     </header>
 
-    <main class="contenido-principal">
+    <main class="container">
         
-        <section class="seccion">
-            <h2>Estudios</h2>
-            <div class="estudios-grid">
-                <div class="columna-estudios">
-                    <h3>En curso</h3>
-                    <ul>
-                        <li><strong>Tecnico en computación</strong> Escuela Tecnica N35 Ing. E. Latzina (2021 - Actualidad)</li>
-                        <li>Cursando ultimo año</li>
-                    </ul>
-                </div>
-                <div class="columna-estudios">
-                    <h3>Adicionales</h3>
-                    <ul>
-                        <li><strong>CATE pre-ingreso UTN</strong> (Actualidad)</li>
+        <section class="profile-section">
+            <div class="profile-card">
+                <img src="tu-foto.jpg" alt="Foto de Perfil" class="profile-img">
+                <div class="profile-info">
+                    <h1>Martin Sambon</h1>
+                    <ul class="education-list">
+                        <li>Escuela Tecnica N35 Ing. E. Latzina  2021-Actualidad</li>
+                        <li>Ingreso Universidad Tecnologica Nacional CATE  Actualidad</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <hr class="separador">
+        <hr class="divider">
 
-        <section class="seccion">
-            <h2>Proyectos Escolares</h2>
-            <div class="proyectos-escolares-grid">
+        <section class="bio-section">
+            <p>
+                Soy estudiante de escuela técnica en la especialidad de Computación, con intención de continuar Ingeniería Electrónica en la UTN.
+                Soy una persona que tiende a ser bastante curiosa y activa, intentando aprender diversos temas nuevos principalmente en el área de la tecnología o ciencia.
+                Debido a la falta de tiempo o recursos siempre suelo aprender mediante tutoriales, páginas web, IA o, en algunos casos, prueba y error.
+                Algunas de las cosas que aprendí de esta forma fueron diseño utilizando GIMP o modelado 3D en Blender.
+            </p>
+        </section>
+
+        <hr class="divider">
+            <h2>Contacto</h2>
+            <ul class="education-list">
+                <li><strong>Teléfono:</strong> <a href="tel:+5491145633577" class="contact-link">+54 9 11 4563-3577</a></li>
                 
-                <div class="tarjeta-proyecto">
-                    <h3>Juego carreras 2D (JAVA)</h3>
+                <li><strong>E-mail:</strong> <a href="mailto:martinhsambon@gmail.com" class="contact-link">martinhsambon@gmail.com</a></li>
+                
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/martín-sambon-376824408/" target="_blank" class="contact-link">Ver perfil profesional</a></li>
+            </ul>
+            <br>
+
+            <h2>Repositorio GitHub</h2>
+            <ul class="education-list">
+                <li><strong>Escolar:</strong> <a href="https://github.com/Martin079" target="_blank" class="contact-link">github.com/Martin079</a></li>
+            </ul>
+
+            <h2>Currículum</h2>
+            <ul class="education-list">
+                <li><strong>Descargar / Ver:</strong> <a href="cv-martin-sambon.pdf" target="_blank" class="contact-link">Currículum Vitae (PDF)</a></li>
+            </ul>
+
+
+        <hr class="divider">
+
+        <section class="interests-section">
+            <h2>Intereses de Aprendizaje</h2>
+            <p>Diversos temas que me gustaría aprender por fuera de mis estudios principales.</p>
+            <div class="interests-grid">
+                
+                <div class="interest-column">
+                    <h3>Idiomas</h3>
                     <ul>
-                        <li><strong>Rol:</strong> Diseñador/Desarrollador</li>
-                        <li> Diseño de autos, circuitos y logo </li>
-                        <li>Implementación de la logica del movimiento </li>
+                        <li>Aleman</li>
+                        <li>Italiano</li>
+                        <li>Frances</li>
+                        <li>Chino o Japones</li>
                     </ul>
                 </div>
 
-                <div class="tarjeta-proyecto">
-                    <h3>Red callcenter (Cisco Packet Tracer)</h3>
+                <div class="interest-column">
+                    <h3>Programación</h3>
                     <ul>
-                        <li><strong>Rol:</strong>Configurador de la red y sistemas</li>
-                        <li>Diseño sobre plano de oficina </li>
-                        <li>Configuración de permisos para las PC y servicio telefónico </li>
-                        <li>Configuración de sistemas IOT </li>
+                        <li>Cobol</li>
+                        <li>Combinar Backend con Frontend</li>
                     </ul>
                 </div>
 
-                <div class="tarjeta-proyecto">
-                    <h3>Pagina web empresa ficticia (HTML)</h3>
+                <div class="interest-column">
+                    <h3>Otros</h3>
                     <ul>
-                        <li><strong>Rol:</strong>Desarrollador web</li>
-                        <li>Redacción y organización de los contenidos (productos, quiénes somos, sección principal). </li>
-                        <li>Diseño de la navegación entre secciones (Home, cátalogo). </li>
-                        <li>Implementación de diseño adaptativo segun dispositivo (PC/laptop y celular). </li>
+                        <li>Aerodinámica</li>
+                        <li>Mecánica (como funciona)</li>
                     </ul>
                 </div>
 
-            </div>
-        </section>
-
-        <hr class="separador">
-
-        <section class="seccion">
-            <h2>Proyectos Personales</h2>
-            <div class="proyecto-personal-unico">
-                <h3>Juego de carreras 3D (unity)</h3>
-                <ul>
-                    <li>Modelado 3D de los autos y circuitos</li>
-                    <li>Funcion de movimiento</li>
-                    <li><strong>Estado actual:</strong>Fase temprana de desarrollo</li>
-                </ul>
             </div>
         </section>
 
     </main>
+
+    <footer>
+        <p>2026 Martin Sambon</p>
+    </footer>
 
 </body>
 </html>
